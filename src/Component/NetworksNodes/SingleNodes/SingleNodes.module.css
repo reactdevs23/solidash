@@ -113,6 +113,7 @@
   padding: 7px 4px;
   padding-left: 6px;
   position: relative;
+  cursor: pointer;
 }
 .dropDowns {
   position: absolute;

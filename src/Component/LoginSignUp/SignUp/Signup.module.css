@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  width: 100%;
 }
 .inputContainer {
   background: #161d26;
@@ -11,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .icon {
   display: block;
@@ -67,6 +69,14 @@
 .arrow {
   color: #070b19;
   font-size: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .formContainer {
+    align-items: center;
+  }
+  .inputContainer {
+    max-width: 420px;
+  }
 }
 @media only screen and (max-width: 520px) {
   .inputContainer {

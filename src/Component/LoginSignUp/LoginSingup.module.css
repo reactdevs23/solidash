@@ -133,6 +133,13 @@
   .wrapper {
     align-items: center;
   }
+  .title {
+    text-align: center;
+  }
+  .tagline {
+    text-align: center;
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 520px) {
   .wrapper {

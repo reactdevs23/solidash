@@ -37,14 +37,14 @@ const SingleNodes = ({
 
       <div className={styles.urlContainer}>
         <div className={styles.endPointTypeContainer}>
-          <div className={styles.endPointType}>
+          <div
+            className={styles.endPointType}
+            onClick={() => {
+              setDropDown((prev) => !prev);
+            }}
+          >
             <span>{endPoints[currentEndPoint].type}</span>{" "}
-            <MdOutlineKeyboardArrowDown
-              className={styles.arrow}
-              onClick={() => {
-                setDropDown((prev) => !prev);
-              }}
-            />
+            <MdOutlineKeyboardArrowDown className={styles.arrow} />
             {dropDown && (
               <div className={styles.dropDowns}>
                 {endPoints.map((el, i) => (
