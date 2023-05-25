@@ -10,6 +10,7 @@ body {
   background-image: url(./images/bg-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
 h1,
