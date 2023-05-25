@@ -1,0 +1,72 @@
+/* Set up the container and card for the inventory chart */
+/* .container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1512px;
+  margin: auto;
+  background: black url("./assets/bg-main.svg") top center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 160px;
+  box-sizing: border-box;
+} */
+.wrapper {
+  width: 100%;
+
+  background-color: rgb(255 255 255 / 10%);
+  font-family: "Outfit", Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 15px;
+}
+
+/* Inventory chart navigation */
+.invebar {
+  padding: 16px;
+  display: flex;
+}
+.inveTitle {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-grow: 1;
+}
+.iconContainer {
+  background: #7c3aed;
+  border-radius: 7.22px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inveTitle img {
+  border-radius: 8px;
+  width: 18px;
+}
+.inveTitle b {
+  font-family: "Outfit";
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 1.26;
+  color: #ffffff;
+}
+.invebar .seemore {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.26;
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+  background-color: #3a4465;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Inventory chart positioning */
+.chartWrapper {
+  width: calc(100% - 12px);
+}
+.inveChart {
+  width: 100%;
+  padding: 0 24px 16px 2px;
+}

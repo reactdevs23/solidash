@@ -1,0 +1,113 @@
+.sidebar {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 30px 20px;
+  padding-bottom: 20px;
+  max-width: 254px;
+  width: 100%;
+  min-height: calc(100vh - 30px);
+  z-index: 5;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.circle {
+  height: 18px;
+  width: 18px;
+  background: #f5b356;
+  border-radius: 6px;
+  display: block;
+}
+.logoText {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25.4118px;
+  line-height: 130%;
+  color: #f5b356;
+}
+.navItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.navItem {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #ffffff;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 12px 12px;
+}
+.navActive {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.icon {
+  width: 18.33px;
+}
+.logoutButton {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+  color: #ffffff;
+  background: #f5b356;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 10px;
+  gap: 6px;
+  cursor: pointer;
+  margin-top: auto;
+}
+.logoutIcon {
+  width: 24px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .sidebar {
+    transform: translateX(-150%);
+    transition: 0.3s;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+  }
+  .showSidebar {
+    transform: translateX(0%);
+    background: #151c33;
+
+    transition: 0.3s;
+  }
+}

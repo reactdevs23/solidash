@@ -1,0 +1,161 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.balanceContainer {
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 6px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 60px;
+}
+.text {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 120%;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 65px;
+}
+.loading {
+  width: 22px;
+}
+.balance {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+
+  color: #ffffff;
+}
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.iconContainer {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.notification {
+  width: 15px;
+}
+.userContainer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 8px;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 5px;
+  position: relative;
+}
+.dropDown {
+  position: absolute;
+  min-width: 100%;
+  top: 60px;
+  left: 0;
+  padding: 12px;
+  background: #0e152e;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+.logoutButton {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.userImage {
+  width: 40px;
+
+  border-radius: 5px;
+}
+.userName {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.arrow {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  cursor: pointer;
+}
+.menu {
+  width: 24px;
+}
+.hamburger {
+  display: none;
+  color: #ffffff;
+}
+@media only screen and (max-width: 1199px) {
+  .hamburger {
+    display: block;
+    font-size: 40px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  .infoContainer {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .header {
+    padding: 0 15px;
+    padding-top: 15px;
+  }
+  .iconContainer {
+    width: 45px;
+    height: 45px;
+  }
+  .userContainer {
+    height: 45px;
+  }
+  .dropDown {
+    top: 45px;
+  }
+  .userImage {
+    width: 30px;
+  }
+
+  .hamburger {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,85 @@
+.loginWithQrCode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  max-width: 273px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.qrcode {
+  width: 191px;
+}
+
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  text-align: center;
+}
+.app {
+  color: #f5b356;
+  width: 10.5px;
+  font-weight: 700;
+}
+.urlContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #161d26;
+  border-radius: 16px;
+  width: 100%;
+  padding: 8px;
+}
+.lockContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 24px;
+  background: #f5b356;
+  border-radius: 16px;
+}
+.url {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #24ae64;
+}
+.link {
+  color: #fff;
+}
+.bottomText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+
+  color: #a4a8ab;
+  text-align: center;
+  padding-top: 50px;
+}
+@media only screen and (max-width: 991px) {
+  .qrcode {
+    width: 150px;
+  }
+}

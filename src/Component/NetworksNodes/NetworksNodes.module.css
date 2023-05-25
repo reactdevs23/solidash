@@ -1,0 +1,58 @@
+.wrapper {
+  padding: 10px 18px;
+}
+
+.inveTitle {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+.iconContainer {
+  background: linear-gradient(206.66deg, #0a61eb 0%, #0537a9 90.27%);
+  border-radius: 7.22px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inveTitle img {
+  border-radius: 8px;
+  width: 18px;
+}
+.inveTitle b {
+  font-family: "Outfit";
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 1.26;
+  color: #ffffff;
+}
+.nodesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+}
+@media only screen and (max-width: 1480px) {
+  .nodesContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .nodesContainer {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .wrapper {
+    padding: 10px;
+  }
+}
