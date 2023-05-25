@@ -27,7 +27,7 @@
 .inveTitle b {
   font-family: "Outfit";
   font-weight: normal;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.26;
   color: #ffffff;
 }
@@ -54,5 +54,10 @@
 @media only screen and (max-width: 420px) {
   .wrapper {
     padding: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mainWrapper {
+    padding: 0 15px;
   }
 }

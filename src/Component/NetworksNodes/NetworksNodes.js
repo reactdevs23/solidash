@@ -45,17 +45,19 @@ const NetworksNodes = () => {
     },
   ];
   return (
-    <div className={[styles.wrapper, "wrapper"].join(" ")}>
-      <div className={styles.inveTitle}>
-        <div className={styles.iconContainer}>
-          <img src={networkNode} alt="#" />
+    <div className={styles.mainWrapper}>
+      <div className={[styles.wrapper, "wrapper"].join(" ")}>
+        <div className={styles.inveTitle}>
+          <div className={styles.iconContainer}>
+            <img src={networkNode} alt="#" />
+          </div>
+          <b>Inventory of Requests</b>
         </div>
-        <b>Inventory of Requests</b>
-      </div>
-      <div className={styles.nodesContainer}>
-        {data.map((el, i) => (
-          <SingleNodes {...el} key={i} />
-        ))}
+        <div className={styles.nodesContainer}>
+          {data.map((el, i) => (
+            <SingleNodes {...el} key={i} />
+          ))}
+        </div>
       </div>
     </div>
   );

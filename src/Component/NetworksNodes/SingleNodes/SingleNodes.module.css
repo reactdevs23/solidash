@@ -188,6 +188,23 @@
   .singleNode {
     padding: 12px;
   }
+  .iconContainer {
+    width: 34px;
+    height: 34px;
+  }
+  .icon {
+    width: 16px;
+  }
+  .textContainer {
+    gap: 4px;
+  }
+  .name {
+    font-size: 13px;
+  }
+  .status {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
   .infoContainer {
     gap: 5px;
   }
